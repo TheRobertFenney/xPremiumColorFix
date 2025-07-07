@@ -1,0 +1,88 @@
+/* 
+  General rule for all premium panel buttons.
+  We target the first div inside the link's main container, which is the icon holder.
+  We apply the background color from a variable and remove any gradients from it and any divs inside it.
+*/
+.premium-colors-active [role="main"] a[href] > div > div:first-child {
+    background-color: var(--icon-bg-color) !important;
+    background-image: none !important;
+    border-radius: 8px; /* The original icon has rounded corners */
+}
+
+.premium-colors-active [role="main"] a[href] > div > div:first-child div {
+    background-image: none !important;
+}
+
+/* 
+  Set the specific color for each button by defining the --icon-bg-color variable.
+*/
+
+/* SuperGrok */
+.premium-colors-active a[href="/i/grok"] {
+    --icon-bg-color: #4fb6f8;
+}
+
+/* Radar */
+.premium-colors-active a[href="/i/radar"] {
+    --icon-bg-color: #2bcb8f;
+}
+
+/* Articles */
+.premium-colors-active a[href="/compose/articles"] {
+    --icon-bg-color: #05c9d7;
+}
+
+/* Monetization */
+.premium-colors-active a[href="/settings/monetization"] {
+    --icon-bg-color: #f94396;
+}
+
+/* Analytics */
+.premium-colors-active a[href="/i/account_analytics"] {
+    --icon-bg-color: #32c688;
+}
+
+/* X Pro */
+.premium-colors-active a[href="https://pro.x.com"] {
+    --icon-bg-color: #f39533;
+}
+
+/* Media Studio */
+.premium-colors-active a[href="https://studio.x.com"] {
+    --icon-bg-color: #05c9d7;
+}
+
+/* Hiring */
+.premium-colors-active a[href="/i/premium/hiring"] {
+    --icon-bg-color: #3cb8f4;
+}
+
+/* Bookmark Folders */
+.premium-colors-active a[href="/i/bookmarks"] {
+    --icon-bg-color: #3cb8f4;
+}
+
+/* Top Articles */
+.premium-colors-active a[href="/i/articles"] {
+    --icon-bg-color: #ff9629;
+}
+
+/* Profile customization */
+.premium-colors-active a[href="/settings/profile_customization"] {
+    --icon-bg-color: #0cc5c7;
+}
+
+/* Expanded bio */
+.premium-colors-active a[href="/settings/bio"] {
+    --icon-bg-color: #fa4093;
+}
+
+/* Theme */
+.premium-colors-active a[href="/settings/display"] {
+    --icon-bg-color: #9076f3;
+}
+
+/* ID Verification */
+.premium-colors-active a[href="/settings/account/id_verification"] {
+    --icon-bg-color: #2bcb8f;
+}
